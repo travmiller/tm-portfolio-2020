@@ -45,7 +45,7 @@ img {
 
 a.logo:hover {
   box-shadow: none !important;
-  opacity: 0.66;
+  opacity: 0.8;
 }
 
 .container {
@@ -211,8 +211,9 @@ ol {
   font-size: 1rem;
 }
 
-.hero__hightlight-1 {
+.hero__highlight-1 {
   background-color: var(--color__accent-1);
+  display: inline;
   white-space: nowrap;
   color: white;
   padding: 0 .1em;
@@ -220,6 +221,7 @@ ol {
 
 .hero__highlight-2 {
   background-color: var(--color__accent-2);
+  display: inline;
   white-space: nowrap;
   color: white;
   padding: 0 .1em;
