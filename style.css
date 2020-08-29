@@ -115,6 +115,7 @@ a {
   animation: AnimatedButton 5s ease infinite;
   background-image: linear-gradient(to right, hsl(175, 52%, 44%), hsl(175, 52%, 44%), hsl(175, 52%, 80%), hsl(175, 52%, 44%), hsl(175, 52%, 44%));
   background-size: 800% 800%;
+  box-shadow: var(--shadow__small);
 }
 
 .button:hover {
