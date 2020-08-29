@@ -113,13 +113,13 @@ a {
   line-height: 1;
   white-space: nowrap;
   animation: AnimatedButton 5s ease infinite;
-  background-image: linear-gradient(to right, hsl(175, 52%, 44%), hsl(175, 52%, 44%), hsl(290, 30%, 48%), hsl(175, 52%, 44%), hsl(175, 52%, 44%));
+  background-image: linear-gradient(to right, hsl(175, 52%, 44%), hsl(175, 52%, 44%), hsl(175, 52%, 80%), hsl(175, 52%, 44%), hsl(175, 52%, 44%));
   background-size: 800% 800%;
 }
 
 .button:hover {
   animation: AnimatedButton 1.5s ease infinite;
-  background-image: linear-gradient(to right, hsl(290, 30%, 48%), hsl(175, 52%, 44%), hsl(290, 30%, 48%));
+  background-image: linear-gradient(to right, hsl(290, 30%, 48%), hsl(290, 30%, 80%), hsl(290, 30%, 48%));
   transform: translateY(-2px);
   cursor: pointer;
   box-shadow: 0 4px 8px hsla(293, 64%, 10%, 0.33);
@@ -417,8 +417,8 @@ ol {
 }
 
 img#myface {
-  width: 120px;
-  height: 120px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
   margin: auto;
