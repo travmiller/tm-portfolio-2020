@@ -13,7 +13,7 @@
   --size__h1--m: 1.875rem;
   --size__h2--m: 1.5rem;
   --size__h: 1.25rem;
-  --size__container: 1360px;
+  --size__container: 1240px;
   --size__spacer: 4vw;
   --shadow__small: 0 .5rem 1rem -.1rem hsla(240, 30%, 20%, 0.17), 0 0 .125rem 0 hsla(0, 0%, 0%, 0.09);
   --font_b: 'Asap', sans-serif;
@@ -391,8 +391,9 @@ ol {
 #email {
   display: inline-block;
   width: auto;
-  height: 18px;
-  margin-top: 1.5rem;
+  margin-left: .5em;
+  position: relative;
+  bottom: -.1em;
 }
 
 #about {
