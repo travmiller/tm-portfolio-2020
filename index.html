@@ -2,228 +2,847 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="alternate icon" href="favicon.ico">
-<link href="https://fonts.googleapis.com/css?family=Asap|Nunito:400,600,700,800,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<title>Travis Miller Design | UI and Web Design</title>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7R22KT247R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Asap|Nunito:400,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Travis Miller | Human-Centered Design & UX</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7R22KT247R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-7R22KT247R');
-</script>
+    gtag('config', 'G-7R22KT247R');
+  </script>
 </head>
 
 <body class="home">
-<section class="hero">
+  <section class="hero">
 
-  <nav class="nav" id="main-nav">
-    <div class="nav__container container">
-      <a class="logo" href="http://travismiller.design/"><img src="images/travis-miller-design-logo.svg"></a>
-      <div class="nav__link-container">
-        <a class="nav__link caps" href="#projects">Projects</a>
-        <a class="nav__link caps" href="#about">About</a>
+    <nav class="nav" id="main-nav">
+      <div class="nav__container container">
+        <a class="logo" href="http://travismiller.design/"><img src="images/travis-miller-design-logo.svg"></a>
+        <div class="nav__link-container">
+          <a class="nav__link caps" href="#projects">Projects</a>
+          <a class="nav__link caps" href="#about">About Me</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero__container container">
+      <h1 class="hero__text">
+        <span class="emoji">👋</span>
+        <span class="emoji-hidden">👋</span> Hi, <br>My name is <a href="#about" class="hero__highlight-1">Travis Miller</a>.<br>
+        I'm a multidisciplinary designer experienced in creating both <a href="#projects" class="hero__highlight-2">digital</a> interfaces and <a href="#furniture" class="hero__highlight-2">physical</a> products.<br>
+      </h1>
+      <a class="hero__button button" href="#about">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+
+    <div id="ai-extractor" class="project">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">CSV.it.com</h2>
+          <div class="project-subtitle caps">Universal Data Extractor</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">UX Design</li>
+              <li class="skill">Interface Design</li>
+              <li class="skill">Figma</li>
+              <li class="skill">Svelte JS</li>
+              <li class="skill">OpenAI API</li>
+              <li class="skill">Vercel</li>
+              <li class="skill">Supabase</li>
+              <li class="skill">Stripe</li>
+              <li class="skill">Tailwind CSS</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Manually extracting structured data (like tables or lists) from various unstructured sources (websites, PDFs, documents) is time-consuming and error-prone. This tool aimed to provide a fast, user-friendly way to extract data from any medium directly into a usable CSV format that can be used in any spreadsheet or data analysis tool.</p>
+            <p><strong>Process & Decisions:</strong> Designed a streamlined user interface where users can specify the source (URL, file upload, image upload, or URL) and visually select or define the data structure to be extracted. Implemented AI techniques to intelligently identify and parse data across different formats. Focused on usability, providing clear feedback during the extraction process and allowing users to preview and refine results before exporting to CSV.</p>
+            <p><strong>Outcome:</strong> Launched csv.it.com, a functional tool simplifying data extraction for users without technical expertise. The AI backend significantly reduces manual effort across various media. Ongoing work focuses on expanding supported formats and improving extraction accuracy based on user feedback.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="images/data-extraction/apartment-listings.jpeg" class="lightbox-image" alt="Data Extractor Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/data-extraction/pricing.jpeg" class="lightbox-image" alt="Data Extractor Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/data-extraction/medical-records.jpeg" class="lightbox-image" alt="Data Extractor Screenshot">
+        </div>
+
+      </div>
+    </div><!-- .project-->
+
+    <!-- Placeholder for AI Project 1 -->
+    <div id="ai-storybook" class="project">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">Personalized Bedtime Story Generator</h2>
+          <div class="project-subtitle caps">AI Interaction Design / Narrative Generation</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">AI Interaction Design</li>
+              <li class="skill">Narrative UX</li>
+              <li class="skill">Prototyping</li>
+              <li class="skill">Prompt Engineering</li>
+              <li class="skill">OpenAI API</li>
+              <li class="skill">Svelte JS</li>
+              <li class="skill">Cursor</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Generating unique and personalized bedtime stories, especially ones featuring the child as the hero, can be challenging for parents. This D&D-inspired project aimed to empower users (parents/children) to easily co-create custom, illustrated bedtime adventures.</p>
+            <p><strong>Process & Decisions:</strong> Explored user interaction models for defining story elements inspired by simple RPG structures (character personalization, setting, simple goals, items). Designed an interface allowing easy input of the child's name/characteristics to feature them as the main character, alongside story prompts. Focused on clear presentation of the generated story and visuals, potentially with simple choices or inventory management. Iterated on prompt strategies and AI integration to achieve narrative coherence and age-appropriate tone, blending text and generated images.</p>
+            <p><strong>Outcome:</strong> Developed a prototype system demonstrating the feasibility of generating personalized, illustrated bedtime stories featuring a user-defined main character. Showcased the potential for AI in creating engaging, custom narrative experiences for children. Key challenges involved ensuring narrative consistency, age-appropriateness, and managing AI image generation within a user-friendly interface.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="https://placehold.co/800x600/EEE/31343C?text=Work+in+Progress" class="lightbox-image" alt="Storybook Generator Screenshot">
+        </div>
+        <!-- Add more relevant images/screens -->
+      </div>
+    </div><!-- .project-->
+
+    <!-- Placeholder for AI Project 2 -->
+    <div id="ai-sims" class="project">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">Perception-Based Agents</h2>
+          <div class="project-subtitle caps">AI Behavior Design / Game Interaction</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">Agent Interaction Design</li>
+              <li class="skill">Game UX</li>
+              <li class="skill">Prompt Engineering</li>
+              <li class="skill">Gemini API</li>
+              <li class="skill">Cursor</li>
+              <li class="skill">Prompt Engineering</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Explored novel AI agent behavior by limiting environmental perception strictly to visual information (screenshots). The challenge was designing agents that could interpret their pixelated world and act believably, while creating an engaging experience for a player observing or interacting with them.</p>
+            <p><strong>Process & Decisions:</strong> Developed agents that process periodic screenshots of their surroundings to inform their state and decisions. Designed simple pixel art graphics to match the agents' limited visual input. Focused on the player's interaction: How could they influence the world or agents? What feedback mechanisms showed the agents' internal state or interpretation of their environment? Experimented with different screenshot processing techniques and behavioral logic.</p>
+            <p><strong>Outcome:</strong> Created a simulation demonstrating agents navigating and interacting based solely on visual screenshot data. Highlighted challenges and interesting emergent behaviors arising from this perception model. Explored unique HCI challenges in designing for agents with non-human-like sensory inputs and limited world models.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="https://placehold.co/800x600/EEE/31343C?text=Work+in+Progress" class="lightbox-image" alt="Perception-Based Agents Screenshot">
+        </div>
+      </div>
+    </div><!-- .project-->
+
+
+
+
+    <div id="ai-sprite-animator" class="project">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">Pixel Sprite Animator</h2>
+          <div class="project-subtitle caps">AI-Assisted Animation Tool / UX Design</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">AI for Creative Tools</li>
+              <li class="skill">UX Design for Animation</li>
+              <li class="skill">Cursor</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Creating smooth, expressive pixel art animations often requires tedious frame-by-frame work. This project explored using AI to assist artists by automating parts of the sprite animation process, aiming to speed up workflow and lower the barrier to entry.</p>
+
+            <p><strong>Process & Decisions:</strong> Designed an interface where artists could define keyframes or provide initial sprites. Explored AI techniques (e.g., interpolation, style transfer adapted for pixel art) to generate in-between frames or suggest animation sequences based on inputs. Focused on user control: How could artists guide the AI, preview results, and easily edit generated frames? Prioritized maintaining pixel art constraints and style consistency during AI generation.</p>
+            <p><strong>Outcome:</strong> Developed a proof-of-concept tool demonstrating AI's potential to assist in pixel sprite animation. Showcased generated animation examples compared to traditional workflows. Key challenges involved balancing AI automation with artistic control and ensuring generated frames adhered strictly to pixel art limitations and style.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="https://placehold.co/800x600/EEE/31343C?text=Work+in+Progress" class="lightbox-image" alt="AI Sprite Animator Screenshot">
+        </div>
+      </div>
+    </div><!-- .project-->
+
+    <div id="ametros-website" class="project">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">Ametros.com</h2>
+          <div class="project-subtitle caps">Website Redesign & Development</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">UX/UI Design</li>
+              <li class="skill">Information Architecture</li>
+              <li class="skill">Custom Wordpress Development</li>
+              <li class="skill">Lead Generation Strategy</li>
+              <li class="skill">Brand Development</li>
+              <li class="skill">Figma</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Ametros needed a new marketing website focused on improving SEO, generating qualified leads, and clearly communicating complex healthcare services to individuals unfamiliar with the workers' compensation system.</p>
+            <p><strong>Process & Decisions:</strong> Restructured site navigation and content based on user needs and business goals. Designed clear CTAs and lead generation forms. Developed a custom, responsive theme for optimal performance and brand consistency.</p>
+            <p><strong>Outcome:</strong> The redesigned site resulted in a more user-friendly and SEO-optimized platform that effectively communicates the company's services and attracts qualified leads.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="images/ametros-website/home.png" class="lightbox-image" alt="Ametros Home Page Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/ametros-website/banking.png" class="lightbox-image" alt="Ametros Banking Page Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/ametros-website/careers.png" class="lightbox-image" alt="Ametros Careers Page Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/ametros-website/cg.png" class="lightbox-image" alt="Ametros CG Page Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/ametros-website/msa.png" class="lightbox-image" alt="Ametros MSA Page Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/ametros-website/wc.png" class="lightbox-image" alt="Ametros WC Page Screenshot">
+        </div>
+      </div>
+    </div><!-- .project-->
+
+    <div id="ametros-portal" class="project">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">CareGuard Member Portal</h2>
+          <div class="project-subtitle caps">UX/UI Redesign for Web Portal</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">User Research</li>
+              <li class="skill">UX Design</li>
+              <li class="skill">UI Design</li>
+              <li class="skill">Wireframing</li>
+              <li class="skill">Figma</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Transitioning to a new backend system (Microsoft Dynamics) created an opportunity to redesign the member portal's front-end, improving usability and aligning the user experience with member needs for accessing account information, managing transactions, and submitting reimbursements.</p>
+            <p><strong>Process & Decisions:</strong> Conducted user research to understand pain points with the old portal. Created user flows, wireframes, and interactive prototypes (Figma) to explore and validate design solutions. Focused on simplifying navigation, clarifying information display, and streamlining key tasks like receipt submission.</p>
+            <p><strong>Outcome:</strong> The redesigned portal provided a more intuitive and efficient experience for members, resulting in fewer support calls, positive member feedback, easier task completion.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="images/ametros-portal/AP-Home.png" class="lightbox-image" alt="Ametros Portal Home Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/ametros-portal/AP-Statements.png" class="lightbox-image" alt="Ametros Portal Statements Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/ametros-portal/AP-Bills.png" class="lightbox-image" alt="Ametros Portal Bills Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/ametros-portal/AP-Map.png" class="lightbox-image" alt="Ametros Portal Map Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/ametros-portal/AP-Profile.png" class="lightbox-image" alt="Ametros Portal Profile Screenshot">
+        </div>
+      </div>
+    </div><!-- .project-->
+
+    <div id="ch" class="project">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">CareHub Claims Software</h2>
+          <div class="project-subtitle caps">UX/UI Design for Internal Application</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">User Research (Internal Users)</li>
+              <li class="skill">UX Research</li>
+              <li class="skill">UI Design</li>
+              <li class="skill">Improving Workflow Efficiency</li>
+              <li class="skill">Figma / Illustrator</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> The internal claims management software (CareHub) had several areas with usability issues and inefficient workflows, impacting the productivity and clarity for the claims management team handling complex medical claims.</p>
+            <p><strong>Process & Decisions:</strong> Collaborated with the claims team (internal user research) to identify major pain points and areas for improvement. Redesigned interfaces focusing on information hierarchy, task flow optimization, and visual clarity. Used Figma for mockups and prototypes to gather feedback before implementation.</p>
+            <p><strong>Outcome:</strong> The updates led to increased productivity, reduced errors, and improved satisfaction for the claims management team.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="images/carehub/horizontal-nav.png" class="lightbox-image" alt="CareHub Navigation Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/carehub/member-claims.png" class="lightbox-image" alt="CareHub Member Claims Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/carehub/member-screen-2.png" class="lightbox-image" alt="CareHub Member Screen 2 Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/carehub/member-screen-accordion.png" class="lightbox-image" alt="CareHub Member Screen Accordion Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/carehub/member-screen.png" class="lightbox-image" alt="CareHub Member Screen Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/carehub/member-details-dark.png" class="lightbox-image" alt="CareHub Member Details Dark Screenshot">
+        </div>
+      </div>
+    </div><!-- .project-->
+
+    <!-- CVS Health Project -->
+    <div id="cvs-pulse" class="project">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">CVS Health, Pulse Design System</h2>
+          <div class="project-subtitle caps">UX Design / Design Systems / Doc Site</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">Design Systems</li>
+              <li class="skill">UX Research</li>
+              <li class="skill">Component Design & Documentation</li>
+              <li class="skill">Accessibility (A11y) Standards</li>
+              <li class="skill">Figma</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Large organizations like CVS Health face challenges maintaining design consistency, accessibility, and development efficiency across numerous digital products. The Pulse Design System aimed to address this by providing a centralized library of reusable components and guidelines.</p>
+
+            <p><strong>Process & Decisions:</strong> As a UX Designer on the team, contributed to the design, documentation, and refinement of components within the Pulse system. Focused on ensuring components were usable, accessible (meeting WCAG standards), and met the needs of various product teams. Collaborated with developers and product managers to understand requirements and facilitate adoption.</p>
+            <p><strong>Outcome:</strong> Contributions helped expand and improve the Pulse Design System, promoting greater consistency and efficiency in product development across CVS Health. Helped ensure new components adhered to UX best practices and accessibility standards.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="images/cvs/Icons.png" class="lightbox-image" alt="CVS Pulse Design System Guideline">
+        </div>
+        <div class="box screen">
+          <img src="images/cvs/Color.png" class="lightbox-image" alt="CVS Pulse Design System Component Example">
+        </div>
+        <div class="box screen">
+          <img src="images/cvs/Tokens.png" class="lightbox-image" alt="CVS Pulse Design System Guideline">
+        </div>
+        <div class="box screen">
+          <img src="images/cvs/Typography.png" class="lightbox-image" alt="CVS Pulse Design System Guideline">
+        </div>
+      </div>
+    </div><!-- .project-->
+
+    <div id="cg-a" class="project">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">CareGuard Mobile App</h2>
+          <div class="project-subtitle caps">Mobile App Design</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">Mobile UI/UX Design</li>
+              <li class="skill">Rapid Prototyping</li>
+              <li class="skill">Figma</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Designed the initial UI/UX for the CareGuard mobile app during a company hackathon event, collaborating closely with a distributed development team. The goal was to provide members quick mobile access to account information, transaction history, balance, and their digital CareGuard card.</p>
+            <p><strong>Process & Decisions:</strong> Focused on designing a simple, task-oriented interface for on-the-go use. Prioritized key information display and easy navigation within the constraints of a rapid development event.</p>
+            <p><strong>Outcome:</strong> Delivered a functional design prototype that served as the foundation for the V1 mobile app, enabling members to access essential account details conveniently.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="images/careguard-app/bills-details.png" class="lightbox-image" alt="CareGuard App Bills Details Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/careguard-app/bills.png" class="lightbox-image" alt="CareGuard App Bills Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/careguard-app/card.png" class="lightbox-image" alt="CareGuard App Card Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/careguard-app/contact.png" class="lightbox-image" alt="CareGuard App Contact Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="images/careguard-app/home.png" class="lightbox-image" alt="CareGuard App Home Screenshot">
+        </div>
+      </div>
+    </div><!-- .project-->
+
+    <!-- Furniture Design & Fabrication Bridge Section -->
+    <div id="furniture" class="furniture-bridge">
+      <div class="container">
+        <h2 class="project-title">Furniture Design & Fabrication</h2>
+        <div class="project-subtitle caps">Physical Product Design / Craftsmanship</div>
+        <div class="skills">
+          <ul class="skill-list">
+            <li class="skill">Industrial Design</li>
+            <li class="skill">Furniture Design</li>
+            <li class="skill">Solidworks</li>
+            <li class="skill">Rhino 3D</li>
+            <li class="skill">AutoCAD</li>
+            <li class="skill">Woodworking</li>
+            <li class="skill">Metalworking</li>
+            <li class="skill">Ergonomics</li>
+            <li class="skill">Prototyping</li>
+            <li class="skill">CNC Operation</li>
+          </ul>
+        </div>
+        <div class="project-description">
+          <p><strong>Background:</strong> Before focusing on digital design, I spent six years as a furniture designer and woodworker at <a href="https://bancroftdesign.com/" target="_blank">Bancroft Design</a>. I contributed to all aspects of furniture design and fabrication for commercial and residential clients. This experience formed the foundation of my understanding of human factors, materials, and iterative design processes.</p>
+          <p><strong>Design Philosophy:</strong> My approach balances human-centered design principles with material properties and structural integrity. This physical design experience continues to influence how I approach digital interfaces, considering how users interact with technology on a tangible, sensory level.</p>
+        </div>
       </div>
     </div>
-  </nav>
 
-  <div class="hero__container container">
-    <h1 class="hero__text">
-      <span class="emoji">👋</span>
-      <span class="emoji-hidden">👋</span> Hi, <br>My name is <a href="#about" class="hero__highlight-1">Travis Miller</a>.<br>
-      <a href="#about" class="hero__highlight-2">I’m a Designer</a> that likes to code.<br>
-      I create sites and interfaces that solve problems and look good.<br>
-    </h1>
-    <a class="hero__button button" href="#about">Contact Me</a>
+    <!-- Harpoon Brewery -->
+    <div class="project">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">Harpoon Brewery Windsor, VT</h2>
+          <div class="project-subtitle caps">Beer Garden Furniture</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">Commercial Furniture</li>
+              <li class="skill">CNC Operation</li>
+              <li class="skill">CAD Design</li>
+              <li class="skill">Rhino 3D</li>
+              <li class="skill">Outdoor Furniture</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Project:</strong> Designed and built custom beer garden tables and seating for Harpoon Brewery's Vermont location, designed to withstand New England weather while providing a comfortable, brand-appropriate dining experience.</p>
+            <p><strong>Process:</strong> Tables are made from premium okoume marine plywood and finished with an epoxy finish to withstand the elements.</p>
+            <p><strong>Outcome:</strong> Delivered a cohesive set of outdoor furniture that enhanced the brewery's patio experience and withstood heavy use and weather exposure.</p>
+            <div class="attribution"><i>With <a href="https://bancroftdesign.com/" target="_blank">Bancroft Design</a></i></div>
+          </div>
+        </div>
+
+        <div class="box screen">
+          <img src="images/furniture/Harpoon Brewery VT/HarpoonBrewery-WindsorVT3.jpg" class="lightbox-image" alt="Harpoon Brewery Windsor VT 3">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Harpoon Brewery VT/HarpoonBrewery_Prototype2.jpg" class="lightbox-image" alt="Harpoon Brewery Furniture Prototype 2">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Harpoon Brewery VT/HarpoonBrewery_Prototype.jpg" class="lightbox-image" alt="Harpoon Brewery Furniture Prototype">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Harpoon Brewery VT/Harpoon-Brewery-Outdoor-Patio-Seating.png" class="lightbox-image" alt="Harpoon Brewery Outdoor Patio Seating">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Harpoon Brewery VT/HarpoonBrewery_WindorVT2.jpg" class="lightbox-image" alt="Harpoon Brewery Windsor VT 2">
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Zipcar Office -->
+    <div class="project">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">Zipcar Cambridge, MA</h2>
+          <div class="project-subtitle caps">Workstations & Storage</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">Commercial Furniture</li>
+              <li class="skill">Custom Fabrication</li>
+              <li class="skill">CAD Design</li>
+              <li class="skill">CNC Operation</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Project:</strong> Helped build custom furniture pieces for Zipcar's office in Cambridge, MA.</p>
+            <p><strong>Process:</strong> Used Rhino 3D to create CAD files to run on Shop Sabre CNC router. All pieces hand finished with polyurethane.</p>
+            <p><strong>Outcome:</strong> Delivered and installed custom furniture workstations and storage solutions. To the Zipcar office.</p>
+            <div class="attribution"><i>With <a href="https://bancroftdesign.com/" target="_blank">Bancroft Design</a></i></div>
+            <div class="attribution"><i>Collaborators: <a href="https://www.ericamoody.com/" target="_blank">Magma Metalworks</a>, <a href="https://www.aw-arch.com/" target="_blank">AW Architects</a></i></div>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Zipcar/zipcar_1.jpg" class="lightbox-image" alt="Zipcar Office Furniture 1">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Zipcar/zipcar_2.jpg" class="lightbox-image" alt="Zipcar Office Furniture 2">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Zipcar/zipcar_3.jpg" class="lightbox-image" alt="Zipcar Office Furniture 3">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Zipcar/zipcar_4.jpg" class="lightbox-image" alt="Zipcar Office Furniture 4">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Zipcar/zipcar_6.jpg" class="lightbox-image" alt="Zipcar Office Furniture 6">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Zipcar/zipcar_7.jpg" class="lightbox-image" alt="Zipcar Office Furniture 7">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Zipcar/zipcar_8.jpg" class="lightbox-image" alt="Zipcar Office Furniture 8">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Zipcar/zipcar_9.jpg" class="lightbox-image" alt="Zipcar Office Furniture 9">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Zipcar/zipcar_10.jpg" class="lightbox-image" alt="Zipcar Office Furniture 10">
+        </div>
+      </div>
+    </div>
+
+    <!-- Street Lab -->
+    <div class="project">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">Street Lab NYC</h2>
+          <div class="project-subtitle caps">Mobile Outdoor Library</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">Modular Furniture</li>
+              <li class="skill">CNC Operation</li>
+              <li class="skill">CAD Design</li>
+              <li class="skill">Rhino 3D</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Project:</strong> Helped iterate on designs and built modular, portable furniture for Street Lab's public space activation initiatives in New York City. The pieces needed to be easily transported, quickly assembled, and durable for outdoor public use.</p>
+            <p><strong>Process:</strong> Collaborated with Street Lab to understand their mobile programming needs. Developed prototypes and final productsthat balanced portability with stability.</p>
+            <p><strong>Outcome:</strong> Delivered furniture solutions that supported Street Lab's mission of transforming public spaces into vibrant community areas, with pieces that have been deployed across multiple NYC locations.</p>
+            <div class="attribution"><i>With <a href="https://bancroftdesign.com/" target="_blank">Bancroft Design</a></i></div>
+            <div class="attribution"><i>Collaborators: <a href="http://www.howeleryoon.com">Howeler and Yoon,</a> <a href="http://www.oficinadesign.org">Joana Torres</a>, <a href="https://b-kd.com">Buro Koray Duman</a>, <a href="https://www.hbh-design.com">Hannah Berkin-Harper</a>, <a href="https://www.jaywalkstudio.com">Jaywalk Studio</a></i></div>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Street Lab/streetlab_1.jpg" class="lightbox-image" alt="Street Lab Installation 1">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Street Lab/streetlab_2.jpg" class="lightbox-image" alt="Street Lab Installation 2">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Street Lab/streetlab_3.jpg" class="lightbox-image" alt="Street Lab Installation 3">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Street Lab/streetlab_4.jpg" class="lightbox-image" alt="Street Lab Installation 4">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Street Lab/streetlab_5.jpg" class="lightbox-image" alt="Street Lab Installation 5">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Street Lab/streetlab_7.jpg" class="lightbox-image" alt="Street Lab Installation 7">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Street Lab/streetlab_9.jpg" class="lightbox-image" alt="Street Lab Installation 9">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Street Lab/streetlab_10.jpg" class="lightbox-image" alt="Street Lab Installation 10">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Street Lab/streetlab_11.jpg" class="lightbox-image" alt="Street Lab Installation 11">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Street Lab/streetlab_12.jpg" class="lightbox-image" alt="Street Lab Installation 12">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Street Lab/streetlab_13.jpg" class="lightbox-image" alt="Street Lab Installation 13">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Street Lab/streetlab_14.jpg" class="lightbox-image" alt="Street Lab Installation 14">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Street Lab/streetlab_16.JPG" class="lightbox-image" alt="Street Lab Installation 16">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Street Lab/streetlab_17.JPEG" class="lightbox-image" alt="Street Lab Installation 17">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Street Lab/streetlab_18.JPEG" class="lightbox-image" alt="Street Lab Installation 18">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Street Lab/streetlab_20.JPEG" class="lightbox-image" alt="Street Lab Installation 20">
+        </div>
+      </div>
+    </div>
+
+    <!-- M. Gemi -->
+    <div class="project">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">M.Gemi Boston</h2>
+          <div class="project-subtitle caps">Custom Office Shelving</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">Woodworking</li>
+              <li class="skill">Custom Fabrication</li>
+              <li class="skill">Display Fixtures</li>
+              <li class="skill">Custom Installation</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Project:</strong> Created custom retail fixtures and display elements for M.Gemi's Boston location, designed to showcase their premium Italian footwear and accessories while embodying their brand aesthetic.</p>
+            <p><strong>Process:</strong> Worked with M.Gemi's team to understand their brand positioning and retail display needs. Selected materials that conveyed quality while providing functional display solutions for their products.</p>
+            <p><strong>Outcome:</strong> Delivered elegant retail fixtures that enhanced the customer experience and product presentation, contributing to the boutique shopping environment.</p>
+            <div class="attribution"><i>With <a href="https://bancroftdesign.com/" target="_blank">Bancroft Design</a></i></div>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/M. Gemi/MGemi1.jpg" class="lightbox-image" alt="M. Gemi Store Display 1">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/M. Gemi/MGemi2.JPEG" class="lightbox-image" alt="M. Gemi Store Display 2">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/M. Gemi/MGemi3.JPG" class="lightbox-image" alt="M. Gemi Store Display 3">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/M. Gemi/MGemi4.JPG" class="lightbox-image" alt="M. Gemi Store Display 4">
+        </div>
+      </div>
+    </div>
+
+    <!-- ICA Museum Cafeteria Tables -->
+    <div class="project">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">ICA Museum, Boston Seaport</h2>
+          <div class="project-subtitle caps">Cafe Tables</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">High-Traffic Furniture</li>
+              <li class="skill">Custom Fabrication</li>
+              <li class="skill">Woodworking</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Project:</strong> Helped build custom walnut cafeteria tables for the Institute of Contemporary Art in Boston, balancing aesthetic considerations with the practical demands of a high-traffic museum cafe.</p>
+            <p><strong>Process:</strong> Collaborated with the ICA team to develop tables that complemented the museum's architecture while providing durable, functional seating for visitors. Selected materials that would withstand intensive cleaning and heavy use.
+            </p>
+            <p><strong>Outcome:</strong> Delivered tables that enhanced the visitor dining experience while meeting the museum's maintenance and durability requirements.</p>
+            <div class="attribution"><i>With <a href="https://bancroftdesign.com/" target="_blank">Bancroft Design</a></i></div>
+            <div class="attribution"><i>Collaborators: <a href="https://www.ericamoody.com/" target="_blank">Magma Metalworks</a>, <a href="https://www.aw-arch.com/" target="_blank">AW Architects</a></i></div>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/ICA Museum/ica1.jpg" class="lightbox-image" alt="ICA Museum Cafeteria Tables 1">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/ICA Museum/ICa2.jpg" class="lightbox-image" alt="ICA Museum Cafeteria Tables 2">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/ICA Museum/ica3.jpg" class="lightbox-image" alt="ICA Museum Cafeteria Tables 3">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/ICA Museum/ica4.jpg" class="lightbox-image" alt="ICA Museum Cafeteria Tables 4">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/ICA Museum/ica5.jpg" class="lightbox-image" alt="ICA Museum Cafeteria Tables 5">
+        </div>
+      </div>
+    </div>
+
+    <!-- White Eboy Reception Desk -->
+    <div class="project">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">White Ebony Reception Desk</h2>
+          <div class="project-subtitle caps">Large Scale Veneer Project</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">Commercial Furniture</li>
+              <li class="skill">Large Scale Veneer</li>
+              <li class="skill">Custom Joinery</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Project:</strong> Contributed to a custom reception desk project featuring white ebony veneer for a corporate client. My primary responsibility was crafting the desktop portion of this striking reception area centerpiece.</p>
+            <p><strong>Process:</strong> Worked with premium white ebony veneer to create the desktop surface, focusing on the technical challenges of large-scale veneer application and joinery.</p>
+            <p><strong>Outcome:</strong> The completed reception desk served as a distinctive centerpiece for the client's lobby, enhancing their brand presentation while efficiently supporting front desk operations.</p>
+            <div class="attribution"><i>With <a href="https://bancroftdesign.com/" target="_blank">Bancroft Design</a></i></div>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/White Ebony Table/whiteebonytable_2.JPG" class="lightbox-image" alt="White Eboy Reception Desk 2">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/White Ebony Table/whiteebonytable_3.JPG" class="lightbox-image" alt="White Eboy Reception Desk 3">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/White Ebony Table/whiteebonytable_4.JPEG" class="lightbox-image" alt="White Eboy Reception Desk 4">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/White Ebony Table/whiteebonytable_5.JPEG" class="lightbox-image" alt="White Eboy Reception Desk 5">
+        </div>
+      </div>
+    </div>
+
+    <!-- CAD Renderings - Combined Furniture Concepts -->
+    <div class="project">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">Furniture Design Concepts</h2>
+          <div class="project-subtitle caps">CAD Design Explorations</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">Furniture Design</li>
+              <li class="skill">Rhino 3D</li>
+              <li class="skill">3D Rendering</li>
+              <li class="skill">Form Exploration</li>
+              <li class="skill">CAD Design</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Project:</strong> Developed a series of conceptual furniture designs exploring different aesthetic directions, structural approaches, and material combinations using CAD modeling.</p>
+            <p><strong>Process:</strong> Created detailed 3D models to visualize different design approaches before committing to physical prototypes. Explored innovative mechanisms, material combinations, and form factors for both storage solutions and bed designs.</p>
+            <p><strong>Outcome:</strong> Generated a portfolio of furniture design concepts that could be presented to clients or adapted for specific projects, showing range of design thinking and aesthetic possibilities across different furniture categories.</p>
+            <div class="attribution"><i>With <a href="https://bancroftdesign.com/" target="_blank">Bancroft Design</a></i></div>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Storage/organic.jpg" class="lightbox-image" alt="Organic Design Storage">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Storage/Stained-Glass.jpg" class="lightbox-image" alt="Stained Glass Cabinet Design">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Storage/Gentle-Vampire.jpg" class="lightbox-image" alt="Gentle Vampire Cabinet Design">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Beds/lutesybed1.jpg" class="lightbox-image" alt="Lutesy Bed Design">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Beds/Archbed_render2-1.jpg" class="lightbox-image" alt="Arch Bed Design - Render 2">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Storage/Cross_Handle.jpg" class="lightbox-image" alt="Cross Handle Cabinet Design">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Storage/Legos.jpg" class="lightbox-image" alt="Legos Storage Design">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Storage/fish-doors.jpg" class="lightbox-image" alt="Fish Doors Cabinet Design">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Storage/fish-doors-cherry.jpg" class="lightbox-image" alt="Fish Doors Cherry Cabinet Design">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Storage/Dot-Array.jpg" class="lightbox-image" alt="Dot Array Cabinet Design">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Storage/Radial.jpg" class="lightbox-image" alt="Radial Cabinet Design">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Beds/Arch_Bed_render-1.jpg" class="lightbox-image" alt="Arch Bed Design - Render 1">
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Furniture Collection -->
+    <div class="project">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">Custom Furniture</h2>
+          <div class="project-subtitle caps">Residential & Small Batch Pieces</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">Furniture Design</li>
+              <li class="skill">Custom Fabrication</li>
+              <li class="skill">Woodworking</li>
+              <li class="skill">Metalworking</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Project:</strong> Designed and built a collection of custom furniture pieces for residential clients, including coffee tables, side tables, shelving, desks, and seating.</p>
+            <p><strong>Process:</strong> Worked directly with clients to understand their needs, space constraints, and aesthetic preferences. Selected materials that balanced beauty with durability and created detailed fabrication plans.</p>
+            <p><strong>Outcome:</strong> Delivered unique, handcrafted furniture pieces that fit perfectly with clients' spaces and needs, demonstrating attention to detail and craftsmanship.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Grid Shelving/WalnutBambooGridShelves.JPG" class="lightbox-image" alt="Walnut and Bamboo Grid Shelving">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Coffee Table/IMG_0019.JPEG" class="lightbox-image" alt="Coffee Table Design 1">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Coffee Table/2011-10-13_13-27-11_720.jpg" class="lightbox-image" alt="Coffee Table Design 1 - Detail">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Coffee Table 2/PridgenSchoerningCoffeeTable.JPG" class="lightbox-image" alt="Pridgen Schoerning Coffee Table">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Side Table 1/SideTable1.jpg" class="lightbox-image" alt="Side Table Design 1">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Rocking Chair/custom-rocking-chair.jpg" class="lightbox-image" alt="Custom Rocking Chair">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Rocking Chair/rocking-chair-close.JPG" class="lightbox-image" alt="Custom Rocking Chair Detail">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/Side Table 2/SideTable2.JPG" class="lightbox-image" alt="Side Table Design 2">
+        </div>
+      </div>
+    </div>
+
+    <!-- Design Engineering -->
+    <div class="project">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">Design Engineering</h2>
+          <div class="project-subtitle caps">Commercial Installations at DCL</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">AutoCAD</li>
+              <li class="skill">SolidWorks</li>
+              <li class="skill">Drafting</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Project:</strong> While working as a Design Engineer at DCL, I engineered specialized installation pieces for corporate clients including Columbia Records and LogMeIn.</p>
+            <p><strong>Process:</strong> Developed engineering solutions that addressed functional requirements while creating visually compelling installations. Worked with fabrication partners to ensure successful implementation of complex design elements.</p>
+            <p><strong>Outcome:</strong> Delivered unique branded installations that helped clients differentiate their spaces and express their brand identity through physical environments.</p>
+            <div class="attribution"><i>With <a href="https://www.designcommunicationsltd.com/" target="_blank">DCL (Design Communications Ltd)</a></i></div>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/DCL/ColumbiaRecords.JPEG" class="lightbox-image" alt="Columbia Records Installation">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/DCL/ColumbiaRecords2.JPEG" class="lightbox-image" alt="Columbia Records Installation Detail">
+        </div>
+        <div class="box screen">
+          <img src="images/furniture/DCL/LogMeInSign.JPEG" class="lightbox-image" alt="LogMeIn Sign Installation">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-row">
+      <div class="container">
+        <div class="portrait">
+          <img id="myface" src="images/myface2.jpg" alt="Travis Miller" width="400" height="500">
+        </div>
+        <div class="about-text">
+          <h1>About Me</h1>
+          <div>
+            <p>My journey as a designer began with a degree in Industrial Design from Wentworth Institute of Technology and six years as a furniture maker/woodworker at Bancroft Design. I developed a deep appreciation for human centered design, materials, and crafting tangible solutions. This hands-on experience solving real-world problems evolved into a role as a Design Engineer at Design Communications Ltd and finally into the digital realm, where I've focused on web design, development, and UI/UX.</p>
+            <p>I'm driven by a curiosity for understanding people's needs and an obsession with designing elegant, intuitive solutions – whether physical objects or digital interfaces. I thrive on the entire design process: from initial research and ideation to prototyping, testing, and refinement.</p>
+            <p>My background spanning both physical and digital design gives me a unique perspective for creating new user experiences that bridge the gap between tangible and virtual interactions.</p>
+            <p><strong>Key Skill Areas:</strong> UX/UI Design (Figma, Adobe Suite), User Research, Interaction Design, Information Architecture, Wireframing, Prototyping, Usability Testing, Front-End Development (HTML, CSS, JS), Industrial Design Principles, CAD Software (SolidWorks, Rhino 3D, Fusion 360, AutoCAD), Woodworking, Welding, Fabrication.</p>
+            <p>Interested in collaborating or discussing opportunities? I'd love to hear from you.</p>
+            <div class="emailline"><strong>Email me: </strong><img id="email" src="images/address.svg" alt="email" height="16px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- #about -->
+
+  <footer class="footer">
+    <div class="container center">&copy; Travis Miller Design 2025</div>
+  </footer>
+
+  <!-- Lightbox container -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div id="lightbox-caption"></div>
   </div>
-</section>
 
-<section id="projects" class="projects">
-
-  <div id="ametros-website" class="project">
-    <div class="container">
-      <div class="box project-info">
-        <h2 class="project-title">Ametros.com</h2>
-        <div class="project-subtitle caps">Website</div>
-        <div class="skills">
-          <ul class="skill-list">
-            <li class="skill">Custom Wordpress Theme Development</li>
-            <li class="skill">Lead Generation</li>
-            <li class="skill">CRM Integration</li>
-            <li class="skill">Google Ads</li>
-            <li class="skill">Brand Development</li>
-          </ul>
-        </div>
-        <div class="project-description">
-          <p>Ametros products and services help make healthcare easier for individuals who have left the workers' compensation system.</p>
-          <p>Ametros needed a new website that had a focus on inbound lead generation and SEO.</p>
-        </div>
-      </div>
-      <div class="box screen">
-        <img src="images/ametros-website/am.png">
-      </div>
-      <div class="box screen screen--m">
-        <img src="images/ametros-website/article.png">
-      </div>
-      <div class="box screen">
-        <img src="images/ametros-website/banking.png">
-      </div>
-      <div class="box screen">
-        <img src="images/ametros-website/blog.png">
-      </div>
-      <div class="box screen">
-        <img src="images/ametros-website/home.png">
-      </div>
-      <div class="box screen">
-        <img src="images/ametros-website/careers.png">
-      </div>
-      <div class="box screen">
-        <img src="images/ametros-website/cg.png">
-      </div>
-      <div class="box screen">
-        <img src="images/ametros-website/msa.png">
-      </div>
-      <div class="box screen">
-        <img src="images/ametros-website/resources.png">
-      </div>
-      <div class="box screen">
-        <img src="images/ametros-website/wc.png">
-      </div>
-    </div>
-  </div><!-- .project-->
-
-  <div id="ametros-portal" class="project">
-    <div class="container">
-      <div class="box project-info">
-        <h2 class="project-title">Ametros Member Portal</h2>
-        <div class="project-subtitle caps">Web Portal</div>
-        <div class="skills">
-          <ul class="skill-list">
-            <li class="skill">User Research</li>
-            <li class="skill">Member Experience</li>
-            <li class="skill">Figma</li>
-          </ul>
-        </div>
-        <div class="project-description">
-          <p>The Ametros Member Portal allows members to login, view their current account balances, view their transaction history, submit receipts for reimbursement, and more.</p>
-          <p>Ametros transitioned their homegrown member portal to one that was built on Microsoft Dynamics. This gave us an opportunity to rethink the front-end design and user experience of the portal.</p>
-        </div>
-      </div>
-      <div class="box screen">
-        <img src="images/ametros-portal/AP-Home.png">
-      </div>
-      <div class="box screen">
-        <img src="images/ametros-portal/AP-Statements.png">
-      </div>
-      <div class="box screen">
-        <img src="images/ametros-portal/AP-Bills.png">
-      </div>
-      <div class="box screen">
-        <img src="images/ametros-portal/AP-Map.png">
-      </div>
-      <div class="box screen">
-        <img src="images/ametros-portal/AP-Profile.png">
-      </div>
-    </div>
-  </div><!-- .project-->
-
-  <div id="ch" class="project">
-    <div class="container">
-      <div class="box project-info">
-        <h2 class="project-title">CareHub</h2>
-        <div class="project-subtitle caps">Claims Management Software</div>
-        <div class="skills">
-          <ul class="skill-list">
-            <li class="skill">User Research</li>
-            <li class="skill">Figma</li>
-            <li class="skill">Illustrator</li>
-          </ul>
-        </div>
-        <div class="project-description">
-          <p>I had the opportunity to redesign several areas of Ametros internal claims management software. Ametros deals with thousands of complex medical claims for its members. Updating key areas of the software has increased clarity productivity for the claims management team.</p>
-        </div>
-      </div>
-      <div class="box screen">
-        <img src="images/carehub/horizontal-nav.png">
-      </div>
-      <div class="box screen">
-        <img src="images/carehub/member-claims.png">
-      </div>
-      <div class="box screen">
-        <img src="images/carehub/member-screen-2.png">
-      </div>
-      <div class="box screen">
-        <img src="images/carehub/member-screen-accordion.png">
-      </div>
-      <div class="box screen">
-        <img src="images/carehub/member-screen.png">
-      </div>
-      <div class="box screen">
-        <img src="images/carehub/member-details-dark.png">
-      </div>
-    </div>
-  </div><!-- .project-->
-
-  <div id="cg-a" class="project">
-    <div class="container">
-      <div class="box project-info">
-        <h2 class="project-title">CareGuard App</h2>
-        <div class="project-subtitle caps">Healthcare Financial App</div>
-        <div class="project-description">
-          <p>The initial CareGuard app was designed and developed during a hackathon event. Many members of the development team work remotely from all over the country, this was a chance for everyone to get together and work on something together in the same space. I accompanied the development team to assist with the design for the app.</p>
-          <p>The app allows users to sign in, view their account information, see recent transactions, their current balance amount, and have access to their CareGuard card.</p>
-        </div>
-      </div>
-      <div class="box screen">
-        <img src="images/careguard-app/bills-details.png">
-      </div>
-      <div class="box screen">
-        <img src="images/careguard-app/bills.png">
-      </div>
-      <div class="box screen">
-        <img src="images/careguard-app/card.png">
-      </div>
-      <div class="box screen">
-        <img src="images/careguard-app/contact.png">
-      </div>
-      <div class="box screen">
-        <img src="images/careguard-app/home.png">
-      </div>
-    </div>  
-  </div><!-- .project-->
-
-</section><!-- .projects-->
-
-<section id="about">
-  <div class="about-row">
-    <div class="container">
-      <div class="portrait">
-        <img id="myface" src="images/myface.jpg" alt="myface" width="400" height="500">
-      </div>
-      <div class="about-text">
-        <h1>About</h1>
-        <div>
-          <p>I am a versatile designer that specializes in web and user interfaces. I have a background in industrial design, and experience designing interfaces and building websites from concept to completion. Design is a true passion of mine and I make it a priority to stay up to date on the latest tools and trends. I am comfortable in all stages of the design process, from hand-sketching to coding prototypes. I am a blue sky thinker who is not afraid to get his hands dirty in any medium. I am fueled by solving problems and building things, which has made me a quick learner and a self-teacher.</p>
-          <p>When I’m not creating layouts or writing code, I spend my time cycling, making music, or designing furniture.</p>
-          <p>I'm currently working as a Digital Strategist at Ametros</p>
-          <p>Have a cool project you're working on? I'd love to hear about it.</p>
-          <div class="emailline"><span>Email me: </span><img id="email" src="images/address.svg" alt="email" height="16px"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section><!-- #about -->
-
-<footer class="footer"><div class="container center">&copy; Travis Miller Design 2020</div></footer>
-<script type="text/javascript" src="scripts.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
 </body>
 
 </html>

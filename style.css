@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*************************
 *VARIABLES
 **************************/
@@ -7,13 +8,13 @@
   --color__accent-1: hsl(175, 52%, 44%);
   --color__accent-2: hsl(290, 30%, 48%);
   --color__link: hsl(216, 43%, 41%);
-  --color__light-grey: hsl(0, 0%, 75%);
+  --color__light-grey: hsl(0, 0%, 80%);
   --size__h1: 2.25rem;
   --size__h2: 1.75rem;
   --size__h1--m: 1.875rem;
   --size__h2--m: 1.5rem;
   --size__h: 1.25rem;
-  --size__container: 1240px;
+  --size__container: 1580px;
   --size__spacer: 4vw;
   --shadow__small: 0 .5rem 1rem -.1rem hsla(240, 30%, 20%, 0.2), 0 0 .125rem 0 hsla(0, 0%, 0%, 0.1);
   --font_b: 'Asap', sans-serif;
@@ -127,8 +128,13 @@ a {
 }
 
 @keyframes AnimatedButton {
-	0% { background-position: 100% 50%; }
-	100% { background-position: 0% 50%; }
+  0% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 ul,
@@ -203,12 +209,12 @@ ol {
 
 .hero__button {
   border: none;
-  border-radius: 4px;
+  border-radius: 3rem;
   text-align: center;
   margin: 1.5rem auto 0 auto;
-  padding: 1rem 1.5rem;
+  padding: 1rem 3rem;
   color: #FFFFFF;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .hero__highlight-1 {
@@ -219,12 +225,20 @@ ol {
   padding: 0 .1em;
 }
 
+.hero__highlight-1:hover {
+  opacity: 0.8;
+}
+
 .hero__highlight-2 {
   background-color: var(--color__accent-2);
   display: inline;
   white-space: nowrap;
   color: white;
   padding: 0 .1em;
+}
+
+.hero__highlight-2:hover {
+  opacity: 0.8;
 }
 
 .emoji {
@@ -241,19 +255,23 @@ ol {
 
 @keyframes wave {
   0% {
-    transform:rotate(0deg);
+    transform: rotate(0deg);
   }
+
   4% {
-    transform:rotate(15deg);
+    transform: rotate(15deg);
   }
+
   8% {
-    transform:rotate(-2deg);
+    transform: rotate(-2deg);
   }
+
   12% {
-    transform:rotate(15deg);
+    transform: rotate(15deg);
   }
+
   16% {
-    transform:rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 
@@ -270,9 +288,9 @@ ol {
 
 .project {
   border-bottom: var(--line);
-  padding-bottom: 4rem;
-  margin-bottom: 4rem;
-  background: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 0%, 97%));
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 0%, 96%));
 }
 
 .project .container {
@@ -296,19 +314,40 @@ ol {
   -webkit-transform: translateZ(0);
   width: 100%;
   margin: 0 0 var(--projects-spacer);
-  -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-  page-break-inside: avoid; /* Firefox */
-  break-inside: avoid; /* IE 10+ */
+  -webkit-column-break-inside: avoid;
+  /* Chrome, Safari, Opera */
+  page-break-inside: avoid;
+  /* Firefox */
+  break-inside: avoid;
+  /* IE 10+ */
 }
 
 .screen {
   box-shadow: var(--shadow__small);
   border-radius: 3px;
   overflow: hidden;
+  /* Fade-in initial state */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Fade-in visible state */
+.screen.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .box.project-info {
   margin-bottom: 4rem;
+}
+
+/* Make Aetna text section span full width */
+#aetna-openenroll .project-info {
+  -webkit-column-span: all;
+  column-span: all;
+  width: 100%;
+  /* Ensure it uses the full spanned width */
 }
 
 .project-title {
@@ -328,7 +367,15 @@ ol {
 }
 
 .project-description {
-  margin: 0;
+  margin-top: 1.5rem;
+}
+
+.attribution {
+  font-size: 0.85rem;
+}
+
+.attribution+.attribution {
+  margin-top: .5rem;
 }
 
 .skill-list {
@@ -362,8 +409,7 @@ ol {
 }
 
 #about {
-  margin: 0rem 3.5vw 6rem 3.5vw;
-  padding: 2rem 0 0 0;
+  padding: 6rem 0 6rem 0;
 }
 
 #about h1 {
@@ -371,7 +417,7 @@ ol {
 }
 
 .about-row .container {
-  max-width: var(--size__container);
+  max-width: 1300px;
   -moz-columns: 300px 2;
   -webkit-columns: 300px 2;
   columns: 300px 2;
@@ -379,16 +425,20 @@ ol {
   -webkit-column-gap: var(--projects-spacer);
   column-gap: var(--projects-spacer);
 }
+
 .about-text {
-  -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-  page-break-inside: avoid; /* Firefox */
-  break-inside: avoid; /* IE 10+ */
+  -webkit-column-break-inside: avoid;
+  /* Chrome, Safari, Opera */
+  page-break-inside: avoid;
+  /* Firefox */
+  break-inside: avoid;
+  /* IE 10+ */
 }
 
 img#myface {
   height: auto;
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   margin: 3rem auto;
   border-radius: 2em;
   border: 4px solid #FFFFFF;
@@ -413,30 +463,156 @@ img#myface {
   h1 {
     font-size: var(--size__h1--m);
   }
+
   h2 {
-  font-size: var(--size__h2--m);
+    font-size: var(--size__h2--m);
   }
+
   .nav__link {
     margin-left: 5vw;
     font-weight: bold;
   }
+
   .hero__container {
     padding-top: 10rem;
     padding-bottom: 8rem;
   }
+
   .hero__text {
     font-size: 1.4rem;
     text-align: center;
   }
+
   .hero__text br:not(:first-of-type) {
     display: none;
   }
+
   .hero__button {
     display: block;
     text-align: center;
     margin: 1rem auto;
   }
-  .about-row .container {
 
+  .about-row .container {}
+}
+
+/* Lightbox styling */
+.lightbox-image {
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 30px;
+}
+
+.lightbox-content {
+  display: block;
+  max-width: 90%;
+  margin: auto;
+}
+
+.close-lightbox {
+  position: fixed;
+  top: 20px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.close-lightbox:hover {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#lightbox-caption {
+  margin: 15px auto;
+  padding-bottom: 30px;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  font-size: 16px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 700px) {
+  .lightbox-content {
+    max-width: 95%;
   }
+
+  .close-lightbox {
+    font-size: 30px;
+    top: 15px;
+    right: 25px;
+  }
+}
+
+/* Furniture Bridge Section */
+.furniture-bridge {
+  background-color: #191b21;
+  color: #fff;
+  padding: 6rem 0;
+  width: 100%;
+}
+
+.furniture-bridge .container {
+  columns: 1 !important;
+  max-width: 900px;
+}
+
+.furniture-bridge h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+  color: white;
+}
+
+.furniture-bridge .project-subtitle {
+  color: #7EDFD6;
+  font-size: 0.9rem;
+  margin: 0 0 1.5rem 0;
+  border-bottom: none;
+}
+
+.furniture-bridge .project-description {
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 800px;
+}
+
+.furniture-bridge .skill-list {
+  margin-bottom: 2rem;
+}
+
+.furniture-bridge .skill {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3);
+  font-size: 0.7rem;
+}
+
+/* Style links within the furniture bridge description */
+.furniture-bridge .project-description a {
+  color: #FFFFFF;
+  /* Change link color to white for better contrast */
+  text-decoration: underline;
+  /* Add underline for clarity */
+}
+
+.furniture-bridge .project-description a:hover {
+  color: var(--color__light-grey);
+  /* Slightly dimmer on hover */
 }
