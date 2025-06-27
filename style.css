@@ -36,7 +36,6 @@ html {
 
 body {
   margin: 0;
-  background: #FFFFFF;
 }
 
 img {
@@ -189,9 +188,10 @@ ol {
 *HERO
 **************************/
 .hero {
-  background: linear-gradient(180deg, white, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0), white) center bottom no-repeat, url(images/hero-bg.png) center no-repeat;
   position: relative;
-  background-size: 100%, cover;
+  background: url(images/hero-bg.png) no-repeat center center;
+  background-size: cover;
+  border-bottom: 1px solid var(--color__light-grey);
 }
 
 .hero__container {
@@ -204,7 +204,6 @@ ol {
   margin: 0;
   max-width: 40rem;
   line-height: 1.6;
-  font-weight: 900;
 }
 
 .hero__button {
@@ -249,7 +248,7 @@ ol {
   z-index: 99;
 }
 
-.emoji-hidden {
+.emoji-placeholder {
   opacity: 0;
 }
 
@@ -290,7 +289,7 @@ ol {
   border-bottom: var(--line);
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 0%, 96%));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.03));
 }
 
 .project .container {
@@ -386,7 +385,7 @@ ol {
 }
 
 .skill {
-  background-color: transparent;
+  background-color: white;
   padding: .33em .5em;
   margin: .25rem .0625rem;
   text-align: center;
@@ -562,55 +561,112 @@ img#myface {
   }
 }
 
-/* Furniture Bridge Section */
-.furniture-bridge {
-  background-color: hsl(0, 0%, 96%);
-  color: var(--color__text);
-  padding: 6rem 0;
-  width: 100%;
-  border-bottom: var(--line);
+/* Pinstripe Background Variations - Different Angles */
+.pinstripe-bg-0 {
+  background-image:
+    repeating-linear-gradient(0deg,
+      rgba(0, 0, 0, 0.03) 0px,
+      rgba(0, 0, 0, 0.03) 2px,
+      transparent 2px,
+      transparent 5px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.05) 100%);
+  background-size: auto, cover;
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll;
 }
 
-.furniture-bridge .container {
-  columns: 1 !important;
-  max-width: 900px;
+.pinstripe-bg-15 {
+  background-image:
+    repeating-linear-gradient(15deg,
+      rgba(0, 0, 0, 0.03) 0px,
+      rgba(0, 0, 0, 0.03) 2px,
+      transparent 2px,
+      transparent 5px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.05) 100%);
+  background-size: auto, cover;
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll;
 }
 
-.furniture-bridge h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.25rem;
-  color: var(--color__text);
+.pinstripe-bg-30 {
+  background-image:
+    repeating-linear-gradient(30deg,
+      rgba(0, 0, 0, 0.03) 0px,
+      rgba(0, 0, 0, 0.03) 2px,
+      transparent 2px,
+      transparent 5px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.05) 100%);
+  background-size: auto, cover;
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll;
 }
 
-.furniture-bridge .project-subtitle {
-  color: var(--color__accent-1);
-  font-size: 0.9rem;
-  margin: 0 0 1.5rem 0;
-  border-bottom: none;
+.pinstripe-bg-45 {
+  background-image:
+    repeating-linear-gradient(45deg,
+      rgba(0, 0, 0, 0.03) 0px,
+      rgba(0, 0, 0, 0.03) 2px,
+      transparent 2px,
+      transparent 5px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.05) 100%);
+  background-size: auto, cover;
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll;
 }
 
-.furniture-bridge .project-description {
-  color: var(--color__text);
-  max-width: 800px;
+.pinstripe-bg-315 {
+  background-image:
+    repeating-linear-gradient(315deg,
+      rgba(0, 0, 0, 0.03) 0px,
+      rgba(0, 0, 0, 0.03) 2px,
+      transparent 2px,
+      transparent 5px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.05) 100%);
+  background-size: auto, cover;
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll;
 }
 
-.furniture-bridge .skill-list {
-  margin-bottom: 2rem;
+.pinstripe-bg-60 {
+  background-image:
+    repeating-linear-gradient(60deg,
+      rgba(0, 0, 0, 0.03) 0px,
+      rgba(0, 0, 0, 0.03) 2px,
+      transparent 2px,
+      transparent 5px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.05) 100%);
+  background-size: auto, cover;
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll;
 }
 
-.furniture-bridge .skill {
-  background: transparent;
-  color: var(--color__text);
-  border-color: var(--color__text);
-  font-size: 0.7rem;
+.pinstripe-bg-75 {
+  background-image:
+    repeating-linear-gradient(75deg,
+      rgba(0, 0, 0, 0.03) 0px,
+      rgba(0, 0, 0, 0.03) 2px,
+      transparent 2px,
+      transparent 5px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.05) 100%);
+  background-size: auto, cover;
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll;
 }
 
-/* Style links within the furniture bridge description */
-.furniture-bridge .project-description a {
-  color: var(--color__link);
-  text-decoration: underline;
-}
-
-.furniture-bridge .project-description a:hover {
-  opacity: 0.8;
+/* Polka Dot and Gradient Background (Reusable) */
+.polka-dot-bg {
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px, 20px 20px;
+  background-position: 0 0, 10px 10px, center;
+  background-repeat: repeat, repeat, no-repeat;
+  background-attachment: scroll;
 }
