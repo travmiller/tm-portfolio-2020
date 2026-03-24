@@ -486,6 +486,12 @@ img#myface {
 
   .hero__actions {
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__actions .nav__link {
+    margin-left: 0;
   }
 
   .about-row .container {}
