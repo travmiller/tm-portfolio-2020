@@ -132,7 +132,7 @@
   margin: 0;
   max-width: 40rem;
   line-height: 1.6;
-  padding: 1rem 1rem 1rem 0;
+  padding: 2rem 1rem 1rem 0;
   background: #fff;
   display: block;
 }
@@ -474,7 +474,7 @@ img#myface {
     text-align: center;
     max-width: calc(100% - 2rem);
     margin: 0 auto;
-    padding: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
   }
 
   .hero__text br:not(:first-of-type) {
