@@ -4,7 +4,7 @@
 *VARIABLES
 **************************/
 :root {
-  --color__text: hsl(257, 10%, 27%);
+  --color__text: hsl(257, 10%, 12%);
   --color__accent-1: hsl(175, 52%, 44%);
   --color__accent-2: hsl(290, 30%, 48%);
   --color__link: hsl(216, 43%, 41%);
