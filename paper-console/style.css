@@ -213,7 +213,6 @@ img {
 .step-placeholder {
   width: 100%;
   aspect-ratio: 3 / 2;
-  background: var(--bg-alt);
   border: 1px dashed var(--border);
   border-radius: var(--radius);
   display: flex;
