@@ -1,4 +1,58 @@
 /*************************
+*PROJECT EXPAND/COLLAPSE
+**************************/
+.project-wrap {
+  position: relative;
+  max-height: 36rem;
+  overflow: hidden;
+}
+
+.project-wrap.expanded {
+  max-height: none;
+  overflow: visible;
+}
+
+.project-wrap .project {
+  border-bottom: none;
+}
+
+.project-fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  background: linear-gradient(to bottom, transparent, #ffffff);
+  pointer-events: none;
+}
+
+.project-wrap.expanded .project-fade {
+  display: none;
+}
+
+.project-expand-bar {
+  border-bottom: var(--line);
+  text-align: center;
+  padding: 0.75rem;
+}
+
+.project-expand-btn {
+  background: none;
+  border: 1px solid var(--color__light-grey);
+  border-radius: 999px;
+  padding: 0.4rem 1.25rem;
+  font-family: var(--font_b);
+  font-size: 0.8125rem;
+  color: var(--color__text);
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.project-expand-btn:hover {
+  border-color: var(--color__text);
+}
+
+/*************************
 *NAV
 **************************/
 .nav {
@@ -238,6 +292,13 @@
   margin: -.25rem 0 1rem 0;
 }
 
+.subtitle-credit {
+  text-transform: none;
+  letter-spacing: 0;
+  font-style: italic;
+  opacity: 0.7;
+}
+
 .project-description {
   margin-top: 1.5rem;
 }
@@ -318,6 +379,39 @@ img#myface {
 }
 
 /*************************
+*CONTACT
+**************************/
+#contact {
+  padding: 6rem 0;
+  border-top: var(--line);
+}
+
+.contact-form-wrap {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.contact-capabilities {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.contact-cap-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.contact-cap-list li {
+  font-size: 0.875rem;
+  padding: 0.375rem 0;
+  border-bottom: 1px solid var(--color__light-grey);
+  line-height: 1.4;
+}
+
+/*************************
 *FOOTER
 **************************/
 
@@ -332,6 +426,11 @@ img#myface {
 **************************/
 
 @media only screen and (max-width: 600px) {
+  .project-wrap {
+    max-height: 72rem;
+  }
+
+
   h1 {
     font-size: var(--size__h1--m);
   }

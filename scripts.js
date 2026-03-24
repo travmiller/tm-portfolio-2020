@@ -44,6 +44,37 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// Project expand/collapse
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.project').forEach(function (project) {
+    const wrap = document.createElement('div');
+    wrap.className = 'project-wrap';
+    project.parentNode.insertBefore(wrap, project);
+    wrap.appendChild(project);
+
+    const fade = document.createElement('div');
+    fade.className = 'project-fade';
+    wrap.appendChild(fade);
+
+    const bar = document.createElement('div');
+    bar.className = 'project-expand-bar';
+    const btn = document.createElement('button');
+    btn.className = 'project-expand-btn';
+    btn.type = 'button';
+    btn.textContent = 'Show more';
+    bar.appendChild(btn);
+    wrap.parentNode.insertBefore(bar, wrap.nextSibling);
+
+    btn.addEventListener('click', function () {
+      const expanded = wrap.classList.toggle('expanded');
+      btn.textContent = expanded ? 'Show less' : 'Show more';
+      if (!expanded) {
+        wrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+});
+
 // Fade-in on scroll functionality
 document.addEventListener('DOMContentLoaded', function () {
   const targets = document.querySelectorAll('.screen');
