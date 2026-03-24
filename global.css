@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/*************************
+*VARIABLES
+**************************/
+:root {
+  --color__text: hsl(257, 10%, 27%);
+  --color__accent-1: hsl(175, 52%, 44%);
+  --color__accent-2: hsl(290, 30%, 48%);
+  --color__link: hsl(216, 43%, 41%);
+  --color__light-grey: hsl(0, 0%, 80%);
+  --size__h1: 2.25rem;
+  --size__h2: 1.75rem;
+  --size__h1--m: 1.875rem;
+  --size__h2--m: 1.5rem;
+  --size__h: 1.25rem;
+  --size__container: 1580px;
+  --size__spacer: 4vw;
+  --shadow__small: 0 .5rem 1rem -.1rem hsla(240, 30%, 20%, 0.2), 0 0 .125rem 0 hsla(0, 0%, 0%, 0.1);
+  --font_b: 'Asap', sans-serif;
+  --font_h: 'Asap', sans-serif;
+  --line: 1px solid var(--color__light-grey);
+}
+
+/*************************
+*GLOBALS
+**************************/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  font-size: 17px;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a.logo:hover {
+  box-shadow: none !important;
+  opacity: 0.8;
+}
+
+.container {
+  max-width: var(--size__container);
+  padding: 0 4vw;
+  margin: auto;
+}
+
+.shadow {
+  box-shadow: 0px 12px 48px 0px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+  padding: 0;
+  line-height: 1;
+  margin: 0;
+}
+
+/*************************
+*TYPOGRAPHY
+**************************/
+html {
+  font-family: var(--font_b);
+  color: var(--color__text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font_h);
+  font-weight: 900;
+  margin: 0 0 .75rem 0;
+  line-height: 1.25;
+  font-size: var(--size__h);
+}
+
+h1 {
+  font-size: var(--size__h1);
+}
+
+h2 {
+  font-size: var(--size__h2);
+}
+
+p {
+  margin: 0 0 1.25rem 0;
+  color: inherit;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color__link);
+  text-decoration: none;
+  text-transform: none;
+}
+
+.button {
+  display: inline-block;
+  font-family: var(--font_h);
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+  animation: AnimatedButton 5s ease infinite;
+  background-image: linear-gradient(to right, hsl(175, 52%, 44%), hsl(175, 52%, 44%), hsl(175, 52%, 80%), hsl(175, 52%, 44%), hsl(175, 52%, 44%));
+  background-size: 800% 800%;
+  box-shadow: var(--shadow__small);
+}
+
+.button:hover {
+  animation: AnimatedButton 1.5s ease infinite;
+  background-image: linear-gradient(to right, hsl(290, 30%, 48%), hsl(290, 30%, 80%), hsl(290, 30%, 48%));
+  transform: translateY(-2px);
+  cursor: pointer;
+  box-shadow: 0 4px 8px hsla(293, 64%, 10%, 0.33);
+}
+
+@keyframes AnimatedButton {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+ul,
+ol {
+  list-style-type: square;
+  padding-left: 1em;
+  line-height: 1.75;
+}
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: .125em;
+}
+
+.center {
+  text-align: center;
+}
