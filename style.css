@@ -395,6 +395,7 @@ img#myface {
 .contact-form-wrap {
   max-width: 40rem;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 .contact-capabilities {
