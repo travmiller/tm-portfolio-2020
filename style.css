@@ -113,8 +113,9 @@
   top: 3rem;
   height: calc(100% - 6rem);
   width: 55%;
-  object-fit: cover;
-  object-position: center;
+  background-image: url('paper-console/assets/build/system-ready.jpg');
+  background-size: cover;
+  background-position: center;
   z-index: 0;
 }
 
@@ -463,6 +464,9 @@ img#myface {
     height: 65vw;
     right: auto;
     top: auto;
+    background-image: url('paper-console/assets/build/system-ready.jpg');
+    background-size: cover;
+    background-position: center;
   }
 
   .hero__container {
