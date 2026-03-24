@@ -616,11 +616,6 @@ img {
 
 .cta-section {
   border-top: 1px solid var(--border);
-  overflow: hidden;
-}
-
-.tally-embed {
-  padding: 0 0.125rem;
 }
 
 .cta-inner {
