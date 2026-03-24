@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="../favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Asap|Nunito:400,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css?v=2.0.1">
+  <title>Travis Miller | Human-Centered Design & UX</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7R22KT247R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7R22KT247R');
+  </script>
+</head>
+
+<body class="home">
+  <section class="hero">
+
+    <nav class="nav" id="main-nav">
+      <div class="nav__container container">
+        <a class="logo" href="/"><img src="../images/travis-miller-design-logo.svg"></a>
+        <div class="nav__link-container">
+          <a class="nav__link caps" href="#projects">Projects</a>
+          <a class="nav__link caps" href="#about">About Me</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero__container container">
+      <h1 class="hero__text">
+        <span class="emoji">👋</span>
+        <span class="emoji-placeholder">👋</span>
+        Hi, <br>My name is <a href="#about" class="hero__highlight-1">Travis Miller</a>.<br>
+        I specialize in turning complex problems into beautiful and functional <a href="#projects" class="hero__highlight-2">solutions</a>.
+      </h1>
+      <a class="hero__button button" href="#about">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+
+    <div id="ai-extractor" class="project pinstripe-bg-45">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">CSV.it.com</h2>
+          <div class="project-subtitle caps">Universal Data Extractor</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">UX Design</li>
+              <li class="skill">Interface Design</li>
+              <li class="skill">Figma</li>
+              <li class="skill">Svelte JS</li>
+              <li class="skill">OpenAI API</li>
+              <li class="skill">Vercel</li>
+              <li class="skill">Supabase</li>
+              <li class="skill">Stripe</li>
+              <li class="skill">Tailwind CSS</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Manually extracting structured data (like tables or lists) from various unstructured sources (websites, PDFs, documents) is time-consuming and error-prone. This tool aimed to provide a fast, user-friendly way to extract data from any medium directly into a usable CSV format that can be used in any spreadsheet or data analysis tool.</p>
+            <p><strong>Process & Decisions:</strong> Designed a streamlined user interface where users can specify the source (URL, file upload, image upload, or URL) and visually select or define the data structure to be extracted. Implemented AI techniques to intelligently identify and parse data across different formats. Focused on usability, providing clear feedback during the extraction process and allowing users to preview and refine results before exporting to CSV.</p>
+            <p><strong>Outcome:</strong> Launched csv.it.com, a functional tool simplifying data extraction for users without technical expertise. The AI backend significantly reduces manual effort across various media. Ongoing work focuses on expanding supported formats and improving extraction accuracy based on user feedback.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="../images/data-extraction/apartment-listings.jpeg" class="lightbox-image" alt="Data Extractor Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/data-extraction/pricing.jpeg" class="lightbox-image" alt="Data Extractor Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/data-extraction/medical-records.jpeg" class="lightbox-image" alt="Data Extractor Screenshot">
+        </div>
+      </div>
+    </div>
+
+    <div id="ai-storybook" class="project pinstripe-bg-315">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">Personalized Bedtime Story Generator</h2>
+          <div class="project-subtitle caps">AI Interaction Design / Narrative Generation</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">AI Interaction Design</li>
+              <li class="skill">Narrative UX</li>
+              <li class="skill">Prototyping</li>
+              <li class="skill">Prompt Engineering</li>
+              <li class="skill">OpenAI API</li>
+              <li class="skill">Svelte JS</li>
+              <li class="skill">Cursor</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Generating unique and personalized bedtime stories, especially ones featuring the child as the hero, can be challenging for parents. This D&D-inspired project aimed to empower users (parents/children) to easily co-create custom, illustrated bedtime adventures.</p>
+            <p><strong>Process & Decisions:</strong> Explored user interaction models for defining story elements inspired by simple RPG structures (character personalization, setting, simple goals, items). Designed an interface allowing easy input of the child's name/characteristics to feature them as the main character, alongside story prompts. Focused on clear presentation of the generated story and visuals, potentially with simple choices or inventory management. Iterated on prompt strategies and AI integration to achieve narrative coherence and age-appropriate tone, blending text and generated images.</p>
+            <p><strong>Outcome:</strong> Developed a prototype system demonstrating the feasibility of generating personalized, illustrated bedtime stories featuring a user-defined main character. Showcased the potential for AI in creating engaging, custom narrative experiences for children. Key challenges involved ensuring narrative consistency, age-appropriateness, and managing AI image generation within a user-friendly interface.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="https://placehold.co/800x600/EEE/31343C?text=Work+in+Progress" class="lightbox-image" alt="Storybook Generator Screenshot">
+        </div>
+
+      </div>
+    </div>
+
+    <!--     <div id="ai-sims" class="project pinstripe-bg-45">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">Perception-Based Agents</h2>
+          <div class="project-subtitle caps">AI Behavior Design / Game Interaction</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">Agent Interaction Design</li>
+              <li class="skill">Game UX</li>
+              <li class="skill">Prompt Engineering</li>
+              <li class="skill">Gemini API</li>
+              <li class="skill">Cursor</li>
+              <li class="skill">Prompt Engineering</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Explored novel AI agent behavior by limiting environmental perception strictly to visual information (screenshots). The challenge was designing agents that could interpret their pixelated world and act believably, while creating an engaging experience for a player observing or interacting with them.</p>
+            <p><strong>Process & Decisions:</strong> Developed agents that process periodic screenshots of their surroundings to inform their state and decisions. Designed simple pixel art graphics to match the agents' limited visual input. Focused on the player's interaction: How could they influence the world or agents? What feedback mechanisms showed the agents' internal state or interpretation of their environment? Experimented with different screenshot processing techniques and behavioral logic.</p>
+            <p><strong>Outcome:</strong> Created a simulation demonstrating agents navigating and interacting based solely on visual screenshot data. Highlighted challenges and interesting emergent behaviors arising from this perception model. Explored unique HCI challenges in designing for agents with non-human-like sensory inputs and limited world models.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="https://placehold.co/800x600/EEE/31343C?text=Work+in+Progress" class="lightbox-image" alt="Perception-Based Agents Screenshot">
+        </div>
+      </div>
+    </div> -->
+
+    <!--     <div id="ai-sprite-animator" class="project pinstripe-bg-45">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">Pixel Sprite Animator</h2>
+          <div class="project-subtitle caps">AI-Assisted Animation Tool / UX Design</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">AI for Creative Tools</li>
+              <li class="skill">UX Design for Animation</li>
+              <li class="skill">Cursor</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Creating smooth, expressive pixel art animations often requires tedious frame-by-frame work. This project explored using AI to assist artists by automating parts of the sprite animation process, aiming to speed up workflow and lower the barrier to entry.</p>
+
+            <p><strong>Process & Decisions:</strong> Designed an interface where artists could define keyframes or provide initial sprites. Explored AI techniques (e.g., interpolation, style transfer adapted for pixel art) to generate in-between frames or suggest animation sequences based on inputs. Focused on user control: How could artists guide the AI, preview results, and easily edit generated frames? Prioritized maintaining pixel art constraints and style consistency during AI generation.</p>
+            <p><strong>Outcome:</strong> Developed a proof-of-concept tool demonstrating AI's potential to assist in pixel sprite animation. Showcased generated animation examples compared to traditional workflows. Key challenges involved balancing AI automation with artistic control and ensuring generated frames adhered strictly to pixel art limitations and style.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="https://placehold.co/800x600/EEE/31343C?text=Work+in+Progress" class="lightbox-image" alt="AI Sprite Animator Screenshot">
+        </div>
+      </div>
+    </div> -->
+
+    <div id="ametros-website" class="project pinstripe-bg-45">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">Ametros.com</h2>
+          <div class="project-subtitle caps">Website Redesign & Development</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">UX/UI Design</li>
+              <li class="skill">Information Architecture</li>
+              <li class="skill">Custom Wordpress Development</li>
+              <li class="skill">Lead Generation Strategy</li>
+              <li class="skill">Brand Development</li>
+              <li class="skill">Figma</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Ametros needed a new marketing website focused on improving SEO, generating qualified leads, and clearly communicating complex healthcare services to individuals unfamiliar with the workers' compensation system.</p>
+            <p><strong>Process & Decisions:</strong> Restructured site navigation and content based on user needs and business goals. Designed clear CTAs and lead generation forms. Developed a custom, responsive theme for optimal performance and brand consistency.</p>
+            <p><strong>Outcome:</strong> The redesigned site resulted in a more user-friendly and SEO-optimized platform that effectively communicates the company's services and attracts qualified leads.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="../images/ametros-website/home.png" class="lightbox-image" alt="Ametros Home Page Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/ametros-website/banking.png" class="lightbox-image" alt="Ametros Banking Page Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/ametros-website/careers.png" class="lightbox-image" alt="Ametros Careers Page Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/ametros-website/cg.png" class="lightbox-image" alt="Ametros CG Page Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/ametros-website/msa.png" class="lightbox-image" alt="Ametros MSA Page Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/ametros-website/wc.png" class="lightbox-image" alt="Ametros WC Page Screenshot">
+        </div>
+      </div>
+    </div>
+
+    <div id="ametros-portal" class="project pinstripe-bg-315">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">CareGuard Member Portal</h2>
+          <div class="project-subtitle caps">UX/UI Redesign for Web Portal</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">User Research</li>
+              <li class="skill">UX Design</li>
+              <li class="skill">UI Design</li>
+              <li class="skill">Wireframing</li>
+              <li class="skill">Figma</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Transitioning to a new backend system (Microsoft Dynamics) created an opportunity to redesign the member portal's front-end, improving usability and aligning the user experience with member needs for accessing account information, managing transactions, and submitting reimbursements.</p>
+            <p><strong>Process & Decisions:</strong> Conducted user research to understand pain points with the old portal. Created user flows, wireframes, and interactive prototypes (Figma) to explore and validate design solutions. Focused on simplifying navigation, clarifying information display, and streamlining key tasks like receipt submission.</p>
+            <p><strong>Outcome:</strong> The redesigned portal provided a more intuitive and efficient experience for members, resulting in fewer support calls, positive member feedback, easier task completion.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="../images/ametros-portal/AP-Home.png" class="lightbox-image" alt="Ametros Portal Home Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/ametros-portal/AP-Statements.png" class="lightbox-image" alt="Ametros Portal Statements Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/ametros-portal/AP-Bills.png" class="lightbox-image" alt="Ametros Portal Bills Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/ametros-portal/AP-Map.png" class="lightbox-image" alt="Ametros Portal Map Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/ametros-portal/AP-Profile.png" class="lightbox-image" alt="Ametros Portal Profile Screenshot">
+        </div>
+      </div>
+    </div>
+
+    <div id="ch" class="project pinstripe-bg-45">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">CareHub Claims Software</h2>
+          <div class="project-subtitle caps">UX/UI Design for Internal Application</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">User Research (Internal Users)</li>
+              <li class="skill">UX Research</li>
+              <li class="skill">UI Design</li>
+              <li class="skill">Improving Workflow Efficiency</li>
+              <li class="skill">Figma / Illustrator</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> The internal claims management software (CareHub) had several areas with usability issues and inefficient workflows, impacting the productivity and clarity for the claims management team handling complex medical claims.</p>
+            <p><strong>Process & Decisions:</strong> Collaborated with the claims team (internal user research) to identify major pain points and areas for improvement. Redesigned interfaces focusing on information hierarchy, task flow optimization, and visual clarity. Used Figma for mockups and prototypes to gather feedback before implementation.</p>
+            <p><strong>Outcome:</strong> The updates led to increased productivity, reduced errors, and improved satisfaction for the claims management team.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="../images/carehub/horizontal-nav.png" class="lightbox-image" alt="CareHub Navigation Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/carehub/member-claims.png" class="lightbox-image" alt="CareHub Member Claims Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/carehub/member-screen-2.png" class="lightbox-image" alt="CareHub Member Screen 2 Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/carehub/member-screen-accordion.png" class="lightbox-image" alt="CareHub Member Screen Accordion Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/carehub/member-screen.png" class="lightbox-image" alt="CareHub Member Screen Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/carehub/member-details-dark.png" class="lightbox-image" alt="CareHub Member Details Dark Screenshot">
+        </div>
+      </div>
+    </div>
+
+    <div id="cvs-pulse" class="project pinstripe-bg-315">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">CVS Health, Pulse Design System</h2>
+          <div class="project-subtitle caps">UX Design / Design Systems / Doc Site</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">Design Systems</li>
+              <li class="skill">UX Research</li>
+              <li class="skill">Component Design & Documentation</li>
+              <li class="skill">Accessibility (A11y) Standards</li>
+              <li class="skill">Figma</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Large organizations like CVS Health face challenges maintaining design consistency, accessibility, and development efficiency across numerous digital products. The Pulse Design System aimed to address this by providing a centralized library of reusable components and guidelines.</p>
+
+            <p><strong>Process & Decisions:</strong> As a UX Designer on the team, contributed to the design, documentation, and refinement of components within the Pulse system. Focused on ensuring components were usable, accessible (meeting WCAG standards), and met the needs of various product teams. Collaborated with developers and product managers to understand requirements and facilitate adoption.</p>
+            <p><strong>Outcome:</strong> Contributions helped expand and improve the Pulse Design System, promoting greater consistency and efficiency in product development across CVS Health. Helped ensure new components adhered to UX best practices and accessibility standards.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="../images/cvs/Icons.png" class="lightbox-image" alt="CVS Pulse Design System Guideline">
+        </div>
+        <div class="box screen">
+          <img src="../images/cvs/Color.png" class="lightbox-image" alt="CVS Pulse Design System Component Example">
+        </div>
+        <div class="box screen">
+          <img src="../images/cvs/Tokens.png" class="lightbox-image" alt="CVS Pulse Design System Guideline">
+        </div>
+        <div class="box screen">
+          <img src="../images/cvs/Typography.png" class="lightbox-image" alt="CVS Pulse Design System Guideline">
+        </div>
+      </div>
+    </div>
+
+    <div id="cg-a" class="project pinstripe-bg-45">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">CareGuard Mobile App</h2>
+          <div class="project-subtitle caps">Mobile App Design</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">Mobile UI/UX Design</li>
+              <li class="skill">Rapid Prototyping</li>
+              <li class="skill">Figma</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Designed the initial UI/UX for the CareGuard mobile app during a company hackathon event, collaborating closely with a distributed development team. The goal was to provide members quick mobile access to account information, transaction history, balance, and their digital CareGuard card.</p>
+            <p><strong>Process & Decisions:</strong> Focused on designing a simple, task-oriented interface for on-the-go use. Prioritized key information display and easy navigation within the constraints of a rapid development event.</p>
+            <p><strong>Outcome:</strong> Delivered a functional design prototype that served as the foundation for the V1 mobile app, enabling members to access essential account details conveniently.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="../images/careguard-app/bills-details.png" class="lightbox-image" alt="CareGuard App Bills Details Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/careguard-app/bills.png" class="lightbox-image" alt="CareGuard App Bills Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/careguard-app/card.png" class="lightbox-image" alt="CareGuard App Card Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/careguard-app/contact.png" class="lightbox-image" alt="CareGuard App Contact Screenshot">
+        </div>
+        <div class="box screen">
+          <img src="../images/careguard-app/home.png" class="lightbox-image" alt="CareGuard App Home Screenshot">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="polka-dot-bg">
+    <div class="about-row">
+      <div class="container">
+        <div class="portrait">
+          <img id="myface" src="../images/myface2.jpg" alt="Travis Miller" width="400" height="500">
+        </div>
+        <div class="about-text">
+          <h1>About Me</h1>
+          <div>
+            <p>My journey as a designer began with a degree in Industrial Design from Wentworth Institute of Technology and six years as a furniture maker/woodworker at Bancroft Design. I developed a deep appreciation for human centered design, materials, and crafting tangible solutions. This hands-on experience solving real-world problems evolved into a role as a Design Engineer at Design Communications Ltd and finally into the digital realm, where I've focused on web design, development, and UI/UX.</p>
+            <p>I'm driven by a curiosity for understanding people's needs and an obsession with designing elegant, intuitive solutions, whether physical objects or digital interfaces. I thrive on the entire design process, from initial research and ideation to prototyping, testing, and refinement.</p>
+            <p>My background spanning both physical and digital design gives me a unique perspective for creating new user experiences that bridge the gap between tangible and virtual interactions.</p>
+            <p><strong>Key Skill Areas:</strong> UX/UI Design (Figma, Adobe Suite), User Research, Interaction Design, Information Architecture, Wireframing, Prototyping, Usability Testing, Front-End Development (HTML, CSS, JS)</p>
+            <p><strong>Other Skills:</strong> Industrial Design Principles, CAD Software (SolidWorks, Rhino 3D, Fusion 360, AutoCAD), Woodworking, Welding, Fabrication.</p>
+
+            <p><a href="/">View Furniture Portfolio →</a></p>
+            <p>Interested in collaborating or discussing opportunities? I'd love to hear from you.</p>
+            <div class="emailline"><strong>Email me: </strong><img id="email" src="../images/address.svg" alt="email" height="16px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container center">&copy; Travis Miller Design 2025</div>
+  </footer>
+
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div id="lightbox-caption"></div>
+  </div>
+
+  <script type="text/javascript" src="../scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p c:/Code/tm-portfolio-2020-master/digital)",
+      "Bash(cp c:/Code/tm-portfolio-2020-master/index.html c:/Code/tm-portfolio-2020-master/digital/index.html)",
+      "Bash(cp c:/Code/tm-portfolio-2020-master/furniture.html c:/Code/tm-portfolio-2020-master/index.html)"
+    ]
+  }
+}
