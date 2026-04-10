@@ -449,6 +449,23 @@ img#myface {
   padding: .5rem;
 }
 
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: hsla(0, 0%, 100%, 0.8);
+  text-decoration: underline;
+}
+
+.footer-links a:hover {
+  color: hsla(0, 0%, 100%, 1);
+}
+
 /*************************
 *MOBILE
 **************************/
