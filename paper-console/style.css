@@ -177,6 +177,69 @@ img {
   border-radius: var(--radius);
 }
 
+/* ---- Press Ribbon ---- */
+
+.press-ribbon-section {
+  padding: 1rem 0;
+  background: #1f1c17;
+  border-bottom: 1px solid #2f2a23;
+}
+
+.press-ribbon {
+  display: flex;
+  width: 100%;
+}
+
+.press-ribbon-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.press-ribbon-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+  gap: 0.35rem;
+  padding: 0.65rem 0.85rem;
+  width: 100%;
+  min-width: 0;
+  color: var(--bg);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.press-ribbon-item:hover {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.22);
+  transform: translateY(-1px);
+}
+
+.press-ribbon-outlet {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #f3d27a;
+  white-space: nowrap;
+}
+
+.press-ribbon-headline {
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.4;
+  min-width: 0;
+}
+
+.press-ribbon-date {
+  font-size: 0.72rem;
+  color: rgba(250, 249, 246, 0.62);
+  white-space: nowrap;
+}
+
 /* ---- Steps ---- */
 
 .how-section {
@@ -722,6 +785,10 @@ img {
 /* ---- Responsive ---- */
 
 @media (min-width: 640px) {
+  .press-ribbon-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .hero-grid {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
