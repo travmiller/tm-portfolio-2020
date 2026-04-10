@@ -315,6 +315,11 @@
   font-weight: 700;
 }
 
+.project-press__button {
+  padding: 0.65rem 1rem;
+  font-size: 0.875rem;
+}
+
 .project-press-date {
   color: hsl(257, 5%, 40%);
 }
@@ -355,6 +360,16 @@
   font-size: .6rem;
   border: 1px solid hsla(0, 0%, 0%, 0.5);
   border-radius: .33em;
+}
+
+.skill--link a {
+  color: var(--color__link);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.skill--link a:hover {
+  text-decoration: underline;
 }
 
 /*************************
@@ -446,23 +461,36 @@ img#myface {
 .footer {
   background: hsl(0, 0%, 15%);
   color: hsla(0, 0%, 100%, 0.66);
-  padding: .5rem;
+  padding: 1.25rem 0;
 }
 
-.footer-links {
+.footer-inner {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
   flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  font-size: 0.8125rem;
+  text-align: center;
 }
 
-.footer-links a {
+.footer-copy {
+  color: hsla(0, 0%, 100%, 0.66);
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1.5rem;
+}
+
+.footer-link {
   color: hsla(0, 0%, 100%, 0.8);
   text-decoration: underline;
 }
 
-.footer-links a:hover {
+.footer-link:hover {
   color: hsla(0, 0%, 100%, 1);
 }
 
@@ -521,6 +549,15 @@ img#myface {
   }
 
   .hero__actions {
+    justify-content: center;
+  }
+
+  .footer-inner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-nav {
     justify-content: center;
   }
 

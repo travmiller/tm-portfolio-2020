@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="global.css">
   <link rel="stylesheet" href="style.css?v=2.0.1">
   <title>Travis Miller | Design & Prototyping</title>
+  <script async src="https://tally.so/widgets/embed.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7R22KT247R"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -40,8 +41,7 @@
         <span class="emoji">👋</span>
         <span class="emoji-placeholder">👋</span>
         <span class="hero__line">Hi, I'm <a href="#about" class="hero__highlight-1">Travis Miller</a>.</span><br>
-        <span class="hero__line">I design and build digital interfaces and boutique handcrafted hardware.</span><br>
-        <span class="hero__line">Available for consulting and prototyping.</span>
+        <span class="hero__line">I design and build digital interfaces and boutique handcrafted hardware.</span>
       </h1>
       <div class="hero__actions">
         <a class="hero__button button" href="#contact">Contact Me</a>
@@ -55,14 +55,11 @@
     <div id="pc-1" class="project pinstripe-bg-315">
       <div class="container">
         <div class="box project-info">
-          <h2 class="project-title">Paper Console (PC-1)</h2>
+          <h2 class="project-title"><a href="paper-console/">Paper Console (PC-1)</a></h2>
           <div class="project-subtitle caps">Hardware Design / UI/UX</div>
-          <p class="project-press">
-            <a href="https://www.yankodesign.com/2026/04/09/this-walnut-box-prints-the-news-youd-scroll-for-only-10-were-made/" target="_blank" rel="noopener noreferrer">Featured on Yanko Design</a>
-            <span class="project-press-date">April 9, 2026</span>
-          </p>
           <div class="skills">
             <ul class="skill-list">
+              <li class="skill skill--link"><a href="https://www.yankodesign.com/2026/04/09/this-walnut-box-prints-the-news-youd-scroll-for-only-10-were-made/" target="_blank" rel="noopener noreferrer">Featured on Yanko Design</a></li>
               <li class="skill">Fusion 360</li>
               <li class="skill">3D Printing</li>
               <li class="skill">Woodworking</li>
@@ -76,7 +73,7 @@
             <p><strong>Project:</strong> Screens are everywhere, yet many of us crave a slower, more intentional way to consume information. The PC-1 is a handmade thermal printer console that delivers daily news, weather, puzzles, and more on paper. No screen, no subscriptions, no more doomscrolling. I wanted to make something to put on my nightstand so my phone isn't the first thing I reach for in the morning.</p>
             <p><strong>Process:</strong> Designed and fabricated the enclosure from walnut and brass, combining traditional woodworking with modern electronics. Used Fusion 360 to model and 3D print an internal sled for mounting the electronics. Built around a Raspberry Pi Zero 2 W, the system is fully open source and modular, allowing users to configure their own content channels.</p>
             <p><strong>Result:</strong> A boutique handcrafted device that bridges physical and digital design. An antidote to screen fatigue that prints only what you choose. Limited run of 10 units.</p>
-            <p><a href="paper-console/">Get one →</a></p>
+            <p><a class="button button--secondary project-press__button" href="paper-console/">Get one &rarr;</a></p>
           </div>
         </div>
         <div class="box screen">
@@ -786,9 +783,12 @@
   </section>
 
   <footer class="footer">
-    <div class="container center footer-links">
-      <span>&copy; Travis Miller Design 2026</span>
-      <a href="https://www.instagram.com/travmiller.design/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <div class="container footer-inner">
+      <span class="footer-copy">&copy; Travis Miller Design 2026</span>
+      <div class="footer-nav">
+        <a class="footer-link" href="https://www.instagram.com/travmiller.design/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a class="footer-link" href="#tally-open=81PPll" data-tally-open="81PPll">Mailing List</a>
+      </div>
     </div>
   </footer>
 
@@ -799,7 +799,6 @@
   </div>
 
   <script type="text/javascript" src="scripts.js"></script>
-  <script src="https://tally.so/widgets/embed.js"></script>
 </body>
 
 </html>

@@ -125,6 +125,23 @@ a {
   box-shadow: 0 4px 8px hsla(293, 64%, 10%, 0.33);
 }
 
+.button--secondary {
+  animation: none;
+  color: hsl(257, 10%, 18%);
+  background: hsla(0, 0%, 100%, 0.8);
+  border: 1px solid hsla(257, 10%, 18%, 0.22);
+  box-shadow: none;
+}
+
+.button--secondary:hover {
+  animation: none;
+  background: hsla(0, 0%, 100%, 0.95);
+  color: hsl(257, 10%, 10%);
+  border-color: hsla(257, 10%, 18%, 0.35);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow__small);
+}
+
 @keyframes AnimatedButton {
   0% {
     background-position: 100% 50%;
